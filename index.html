@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#111111">
 <script>
 // ?m=gle&출고 → gle.html?출고 · m 없이 ?출고/?q= → E클래스(예전 링크)
-(function(){var p=new URLSearchParams(location.search),ids=["e"],m=(p.get("m")||"").toLowerCase();
+(function(){var p=new URLSearchParams(location.search),ids=["c", "e", "glc", "glcc", "gle", "glec", "s", "sl"],m=(p.get("m")||"").toLowerCase();
 if(!m&&(p.has("출고")||p.has("w")||p.has("q")||decodeURIComponent(location.hash)==="#출고"))m="e";
 if(ids.indexOf(m)>=0){p.delete("m");p.delete("t");var q=p.toString().replace(/=(&|$)/g,"$1");location.replace(m+".html"+(q?"?"+q:"")+location.hash);}})();
 </script>
@@ -40,13 +40,13 @@ footer{padding:8px 16px 48px;color:var(--sub);font-size:14px}
 <main>
   <h2>차종 고르기</h2>
     <a class="car" href="e.html"><b>E클래스 (W214)</b><span>›</span></a>
-    <div class="car off"><b>C클래스 (W206)</b><em>준비 중</em></div>
-    <div class="car off"><b>S클래스 (W223)</b><em>준비 중</em></div>
-    <div class="car off"><b>S클래스 롱 (V223)</b><em>준비 중</em></div>
-    <div class="car off"><b>GLC (X254)</b><em>준비 중</em></div>
-    <div class="car off"><b>GLC 쿠페 (C254)</b><em>준비 중</em></div>
-    <div class="car off"><b>GLE (V167)</b><em>준비 중</em></div>
-    <div class="car off"><b>GLE 쿠페 (C167)</b><em>준비 중</em></div>
+    <a class="car" href="c.html"><b>C클래스 (W206)</b><span>›</span></a>
+    <a class="car" href="s.html"><b>S클래스 (W223)</b><span>›</span></a>
+    <a class="car" href="sl.html"><b>S클래스 롱 (V223)</b><span>›</span></a>
+    <a class="car" href="glc.html"><b>GLC (X254)</b><span>›</span></a>
+    <a class="car" href="glcc.html"><b>GLC 쿠페 (C254)</b><span>›</span></a>
+    <a class="car" href="gle.html"><b>GLE (V167)</b><span>›</span></a>
+    <a class="car" href="glec.html"><b>GLE 쿠페 (C167)</b><span>›</span></a>
 </main>
 <footer>
   <a class="btn kakao" href="https://open.kakao.com/o/szY84nJi" target="_blank" rel="noopener">카톡으로 물어보기</a>
